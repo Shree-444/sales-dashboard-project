@@ -89,6 +89,26 @@ st.plotly_chart(
     use_container_width=True
 )
 
+# Profit Trend------------------------------------------------------------------
+
+profit_trend = (
+    filtered_df
+    .groupby("month_year", as_index=False)["profit"]
+    .sum()
+)
+
+fig_profit_trend = px.line(
+    profit_trend,
+    x="month_year",
+    y="profit",
+    title="Profit Trend"
+)
+
+st.plotly_chart(
+    fig_profit_trend,
+    use_container_width=True
+)
+
 # Region & Category Charts------------------------------------------------------------------
 
 region_sales = (
