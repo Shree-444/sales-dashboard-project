@@ -69,6 +69,14 @@ The data was cleaned and transformed before analysis.
 - Smaller cities offer growth opportunities.
 - Excessive discounting negatively impacts profit margins.
 
+## Notebook Links
+
+If github fails to show the notebooks, check them out here-
+
+- Data Understanding: [Data Understanding Notebook](https://nbviewer.org/github/Shree-444/sales-dashboard-project/blob/e3799f3e543019f0550ab21ec6dcb212b5e493a0/notebooks/data_understanding.ipynb)
+- Data Cleaning: [Data Cleaning Notebook](https://nbviewer.org/github/Shree-444/sales-dashboard-project/blob/e3799f3e543019f0550ab21ec6dcb212b5e493a0/notebooks/data_cleaning.ipynb)
+- Data Analysis: [Data Analysis Notebook](https://nbviewer.org/github/Shree-444/sales-dashboard-project/blob/2d61aa8b388c7d327188e81ac5fd8324247cbb8b/notebooks/data_analysis.ipynb)
+
 ## Installation
 
 ### 1. Clone the Repository
