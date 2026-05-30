@@ -87,7 +87,9 @@ fig_sales_trend = px.line(
     y="sales",
     title="Sales Trend"
 )
-
+fig_sales_trend.update_layout(
+    dragmode="pan"
+)
 st.plotly_chart(
     fig_sales_trend,
     use_container_width=True
@@ -107,7 +109,9 @@ fig_profit_trend = px.line(
     y="profit",
     title="Profit Trend"
 )
-
+fig_profit_trend.update_layout(
+    dragmode="pan"
+)
 st.plotly_chart(
     fig_profit_trend,
     use_container_width=True
@@ -138,7 +142,9 @@ with col1:
         y="sales",
         title="Regional Sales"
     )
-
+    fig_region.update_layout(
+    dragmode="pan"
+    )
     st.plotly_chart(
         fig_region,
         use_container_width=True
@@ -151,7 +157,9 @@ with col2:
         y="sales",
         title="Category Sales"
     )
-
+    fig_category.update_layout(
+    dragmode="pan"
+    )
     st.plotly_chart(
         fig_category,
         use_container_width=True
@@ -174,7 +182,9 @@ fig_products = px.bar(
     orientation="h",
     title="Top 10 Products by Sales"
 )
-
+fig_products.update_layout(
+    dragmode="pan"
+)
 st.plotly_chart(
     fig_products,
     use_container_width=True
