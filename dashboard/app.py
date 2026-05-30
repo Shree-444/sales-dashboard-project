@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 # Page Config------------------------------------------------------------------
 
@@ -12,7 +13,10 @@ st.set_page_config(
 
 # Load Data------------------------------------------------------------------
 
-df = pd.read_csv("../data/processed/processed_superstore.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+csv_path = BASE_DIR / "data" / "processed" / "processed_superstore.csv"
+
+df = pd.read_csv(csv_path)
 
 # Header------------------------------------------------------------------
 
