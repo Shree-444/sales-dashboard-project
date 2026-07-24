@@ -1,4 +1,4 @@
-# Sales Dashboard Analytics Project
+# SuperStore Sales Analytics Project
 
 ## Project Overview
 
